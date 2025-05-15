@@ -72,6 +72,7 @@ export default function DandelionSeeds({ count = 200 }) {
   return (
     <points ref={mesh}>
       <bufferGeometry>
+        {/** @ts-expect-error no type */}
         <bufferAttribute
           attach="attributes-position"
           count={count}
