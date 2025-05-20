@@ -1,18 +1,15 @@
 {
-  "name": "harryplusplus.github.io",
-  "version": "1.0.0",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harryplusplus/harryplusplus.github.io.git"
   },
-  "keywords": [],
   "author": "Harry Kim <harryplusplus@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/harryplusplus/harryplusplus.github.io/issues"
   },
   "homepage": "https://github.com/harryplusplus/harryplusplus.github.io#readme",
-  "description": "",
   "workspaces": [
     "packages/web"
   ]
