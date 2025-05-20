@@ -25,25 +25,18 @@ jobs:
       - name: Install wasm-pack
         run: npm install -g wasm-pack
 
-      # # 4. Rust로 WASM 빌드
-      # - name: Build WebAssembly
-      #   run: |
-      #     cd rust
-      #     wasm-pack build --target web --out-dir ../web/public/wasm
+      - name: Build World
+        run: |
+          cd crates/world
+          wasm-pack build --target web --out-dir ../../packages/web/public/world
 
+      - name: Install Node.js dependencies
+        run: npm install
 
-      # # 6. Next.js 종속성 설치
-      # - name: Install Next.js dependencies
-      #   run: |
-      #     cd web
-      #     npm install
-
-      # # 7. Next.js 빌드 및 정적 파일 생성
-      # - name: Build Next.js
-      #   run: |
-      #     cd web
-      #     npm run build
-      #     npm run export
+      - name: Build Next.js
+        run: |
+          cd packages/web
+          npm run build
 
       # 8. GitHub Pages에 배포
       # - name: Deploy to GitHub Pages
