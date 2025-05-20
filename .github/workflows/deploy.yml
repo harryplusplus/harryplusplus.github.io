@@ -1,0 +1,54 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        targets: wasm32-unknown-unknown
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install wasm-pack
+        run: npm install -g wasm-pack
+
+      # # 4. Rust로 WASM 빌드
+      # - name: Build WebAssembly
+      #   run: |
+      #     cd rust
+      #     wasm-pack build --target web --out-dir ../web/public/wasm
+
+
+      # # 6. Next.js 종속성 설치
+      # - name: Install Next.js dependencies
+      #   run: |
+      #     cd web
+      #     npm install
+
+      # # 7. Next.js 빌드 및 정적 파일 생성
+      # - name: Build Next.js
+      #   run: |
+      #     cd web
+      #     npm run build
+      #     npm run export
+
+      # 8. GitHub Pages에 배포
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: web/out
+      #     cname: www.harryplusplus.com # CNAME 파일 유지
