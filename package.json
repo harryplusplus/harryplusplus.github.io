@@ -12,5 +12,8 @@
     "url": "https://github.com/harryplusplus/harryplusplus.github.io/issues"
   },
   "homepage": "https://github.com/harryplusplus/harryplusplus.github.io#readme",
-  "description": ""
+  "description": "",
+  "workspaces": [
+    "packages/web"
+  ]
 }
