@@ -1,16 +1,14 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "author": "Harry Kim <harryplusplus@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "author": "Harry Kim <harryplusplus@gmail.com>",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
   "dependencies": {
     "next": "15.3.2",
     "react": "19.1.0",
