@@ -7,7 +7,6 @@
     "noEmit": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
     "jsx": "preserve",
     "plugins": [
       {

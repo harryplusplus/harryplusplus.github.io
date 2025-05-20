@@ -4,6 +4,7 @@
     "incremental": true,
     "isolatedModules": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true
   }
 }
