@@ -15,7 +15,8 @@ jobs:
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
-        targets: wasm32-unknown-unknown
+        with:
+          targets: wasm32-unknown-unknown
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
