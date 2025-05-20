@@ -3,6 +3,7 @@ name = "world"
 publish = false
 authors = ["Harry Kim <harryplusplus@gmail.com>"]
 edition = "2024"
+version = "1.0.0"
 
 [lib]
 crate-type = ["cdylib"]
