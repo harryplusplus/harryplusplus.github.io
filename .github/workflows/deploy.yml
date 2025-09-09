@@ -16,9 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: withastro/action@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 24
+          node-version-file: .nvmrc
+      - run: pnpm i
+      - run: pnpm build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
 
   deploy:
     needs: build
@@ -27,6 +32,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
