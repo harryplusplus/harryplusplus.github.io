@@ -4,9 +4,9 @@
   "description": "Harry++ Homepage",
   "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "license": "MIT",
   "packageManager": "pnpm@10.15.1",
