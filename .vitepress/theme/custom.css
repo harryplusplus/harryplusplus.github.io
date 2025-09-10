@@ -1,8 +1,16 @@
 :root {
+  --accent-gradient: linear-gradient(120deg, #bd34fe, #41d1ff);
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  --vp-home-hero-name-background: var(--accent-gradient);
 }
 
-.VPHomeHero .text {
+.VPNavBarTitle span {
+  background: var(--accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHomeHero span.name {
   max-width: 59rem;
 }

@@ -3,8 +3,7 @@
 layout: home
 
 hero:
-  name: "Harry++"
-  text: 'std::println("Hi there! I''m Harry.");'
+  name: 'std::println("Hi there! I''m Harry.");'
   tagline: My great project tagline
   actions:
     - theme: brand
