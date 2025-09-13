@@ -7,7 +7,7 @@ hero:
 
 features:
   - title: TypeScript 백엔드 포트폴리오
-    details: "기술 스택: Node.js, NestJS, PostgreSQL, Redis, Docker, GCP"
+    details: "기술 스택: Node.js, Express, NestJS, PostgreSQL, Redis, Docker, AWS"
     link: /portfolio/typescript-backend
     linkText: 자세히 보기
     icon:
