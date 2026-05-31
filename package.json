@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "oxfmt --write && prettier --write 'src/**/*.astro'",
+    "check": "oxfmt --write && prettier --write 'src/**/*.astro' && oxlint",
     "check:ci": "oxfmt --check && prettier --check 'src/**/*.astro' && oxlint",
     "prepare": "husky"
   },
