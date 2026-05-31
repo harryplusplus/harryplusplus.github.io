@@ -13,11 +13,13 @@ export default defineConfig({
         root: { label: 'English', lang: 'en' },
         ko: { label: '한국어', lang: 'ko' },
       },
-      customCss: [
-        './src/styles/charmtone-pantera.css',
-        './src/styles/fonts.css',
-      ],
+      customCss: ['./src/styles/custom.css', './src/styles/fonts.css'],
       head: [
+        {
+          tag: 'script',
+          attrs: { type: 'module' },
+          content: "document.documentElement.dataset.theme = 'light'",
+        },
         {
           tag: 'link',
           attrs: {
