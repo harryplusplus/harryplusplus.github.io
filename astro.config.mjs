@@ -8,6 +8,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'harryplusplus',
+      defaultLocale: 'root',
+      locales: {
+        root: { label: 'English', lang: 'en' },
+        ko: { label: '한국어', lang: 'ko' },
+      },
       customCss: [
         './src/styles/charmtone-pantera.css',
         './src/styles/fonts.css',
@@ -111,13 +116,18 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Guides',
+          translations: { ko: '가이드' },
           items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', slug: 'guides/example' },
+            {
+              label: 'Example Guide',
+              translations: { ko: '예제 가이드' },
+              slug: 'guides/example',
+            },
           ],
         },
         {
           label: 'Reference',
+          translations: { ko: '참조' },
           items: [{ autogenerate: { directory: 'reference' } }],
         },
       ],
