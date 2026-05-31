@@ -116,12 +116,7 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        { label: 'Home', link: '/', translations: { ko: '홈' } },
-        {
-          label: 'Career',
-          link: '/career/',
-          translations: { ko: '경력기술서' },
-        },
+        { label: 'Career', link: '/', translations: { ko: '경력기술서' } },
         {
           label: 'Portfolio',
           translations: { ko: '포트폴리오' },
