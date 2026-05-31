@@ -2,10 +2,10 @@
 
 /* ===== Theme overrides ===== */
 :root {
-  /* Accent: warm coral */
-  --sl-color-accent-low: #f5dbd0;
-  --sl-color-accent: #e0846a;
-  --sl-color-accent-high: #a85a44;
+  /* Accent: hackernews orange */
+  --sl-color-accent-low: #ffe0b3;
+  --sl-color-accent: #ff6600;
+  --sl-color-accent-high: #cc5200;
 }
 
 /* ===== General overrides ===== */
