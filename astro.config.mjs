@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'My Docs',
-      customCss: ['./src/styles/charmtone-pantera.css'],
+      customCss: ['./src/styles/charmtone-pantera.css', './src/styles/fonts.css'],
       social: [
         {
           icon: 'github',
