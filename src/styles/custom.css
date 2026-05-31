@@ -2,10 +2,10 @@
 
 /* ===== Theme overrides ===== */
 :root {
-  /* Accent: purple instead of default blue */
-  --sl-color-accent-low: #e0dbff;
-  --sl-color-accent: #6b50ff;
-  --sl-color-accent-high: #3a2b8a;
+  /* Accent: copper pipe */
+  --sl-color-accent-low: #f2d5ca;
+  --sl-color-accent: #d97a5c;
+  --sl-color-accent-high: #a55338;
 }
 
 /* ===== General overrides ===== */
