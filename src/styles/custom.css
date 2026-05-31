@@ -2,10 +2,10 @@
 
 /* ===== Theme overrides ===== */
 :root {
-  /* Accent: mustard */
-  --sl-color-accent-low: #f0e4c2;
-  --sl-color-accent: #c5a040;
-  --sl-color-accent-high: #8a6d2e;
+  /* Accent: plum */
+  --sl-color-accent-low: #e0d6e8;
+  --sl-color-accent: #8a6e9e;
+  --sl-color-accent-high: #5f4773;
 }
 
 /* ===== General overrides ===== */
