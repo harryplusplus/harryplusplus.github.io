@@ -114,21 +114,19 @@ export default defineConfig({
         },
       ],
       sidebar: [
+        { label: 'Home', link: '/', translations: { ko: '홈' } },
         {
-          label: 'Guides',
-          translations: { ko: '가이드' },
-          items: [
-            {
-              label: 'Example Guide',
-              translations: { ko: '예제 가이드' },
-              slug: 'guides/example',
-            },
-          ],
+          label: 'Career',
+          link: '/career/',
+          translations: { ko: '경력기술서' },
         },
         {
-          label: 'Reference',
-          translations: { ko: '참조' },
-          items: [{ autogenerate: { directory: 'reference' } }],
+          label: 'Portfolio',
+          translations: { ko: '포트폴리오' },
+          items: [
+            { label: 'High-Performance Backend', slug: 'portfolio/concept-a' },
+            { label: 'Data Engineering', slug: 'portfolio/concept-b' },
+          ],
         },
       ],
     }),
