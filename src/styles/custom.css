@@ -2,10 +2,10 @@
 
 /* ===== Theme overrides ===== */
 :root {
-  /* Accent: slate blue */
-  --sl-color-accent-low: #d0dce8;
-  --sl-color-accent: #5a7a9a;
-  --sl-color-accent-high: #34506e;
+  /* Accent: warm coral */
+  --sl-color-accent-low: #f5dbd0;
+  --sl-color-accent: #e0846a;
+  --sl-color-accent-high: #a85a44;
 }
 
 /* ===== General overrides ===== */
