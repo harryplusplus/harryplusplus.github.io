@@ -31,6 +31,10 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Install dependencies
         run: pnpm install
+      - name: Lint
+        run: pnpm lint
+      - name: Check formatting
+        run: pnpm format:ci
       - name: Build
         run: pnpm build
       - name: Upload artifact
