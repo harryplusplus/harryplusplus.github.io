@@ -9,8 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "oxlint",
-    "fmt": "oxfmt --check",
-    "fmt:fix": "oxfmt --write"
+    "format": "oxfmt --write",
+    "format:ci": "oxfmt --check"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.39.2",
