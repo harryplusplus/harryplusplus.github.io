@@ -16,11 +16,6 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css', './src/styles/fonts.css'],
       head: [
         {
-          tag: 'script',
-          attrs: { type: 'module' },
-          content: "document.documentElement.dataset.theme = 'light'",
-        },
-        {
           tag: 'link',
           attrs: {
             rel: 'preload',
