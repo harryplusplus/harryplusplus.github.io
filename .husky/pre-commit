@@ -1,2 +1,1 @@
-pnpm format:ci
-pnpm lint
+pnpm check
