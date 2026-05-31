@@ -39,19 +39,13 @@ export default defineConfig({
             href: '/apple-touch-icon.png',
           },
         },
-        {
-          tag: 'link',
-          attrs: {
-            rel: 'manifest',
-            href: '/site.webmanifest',
-          },
-        },
+        { tag: 'link', attrs: { rel: 'manifest', href: '/site.webmanifest' } },
       ],
       social: [
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/harryplusplus/harryplusplus.github.io',
+          href: 'https://github.com/harryplusplus',
         },
       ],
       sidebar: [
