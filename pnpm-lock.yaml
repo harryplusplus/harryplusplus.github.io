@@ -18,6 +18,9 @@ importers:
         specifier: ^0.34.5
         version: 0.34.5
     devDependencies:
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       oxfmt:
         specifier: ^0.52.0
         version: 0.52.0
@@ -1334,6 +1337,11 @@ packages:
 
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   i18next@26.3.0:
     resolution: {integrity: sha512-gHSgGpUXVmuqE2El1W61DmxeyeTlFfZgdJRWMo9jScAn5pu7TuTuiccb1zh3E2J9hEBVGJ23+96x0ieBhfuIHA==}
@@ -3404,6 +3412,8 @@ snapshots:
   html-whitespace-sensitive-tag-names@3.0.1: {}
 
   http-cache-semantics@4.2.0: {}
+
+  husky@9.1.7: {}
 
   i18next@26.3.0: {}
 
