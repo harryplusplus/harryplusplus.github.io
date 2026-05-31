@@ -2,34 +2,13 @@
 
 /* ===== Theme overrides ===== */
 :root {
-  /* Foreground (slightly warmer grays) */
-  --sl-color-white: #201f26;
-  --sl-color-gray-1: #2d2c36;
-  --sl-color-gray-2: #3a3943;
-  --sl-color-gray-3: #4d4c57;
-  --sl-color-gray-4: #605f6b;
-  --sl-color-gray-5: #858392;
-  --sl-color-gray-6: #bfbcc8;
-  --sl-color-gray-7: #ecebf0;
-
   /* Accent: purple instead of default blue */
   --sl-color-accent-low: #e0dbff;
   --sl-color-accent: #6b50ff;
   --sl-color-accent-high: #3a2b8a;
-
-  /* Semantic hues adjusted */
-  --sl-hue-orange: 24;
-  --sl-hue-green: 160;
-  --sl-hue-blue: 200;
-  --sl-hue-purple: 270;
-  --sl-hue-red: 348;
-
-  /* Derived from overrides */
-  --sl-color-text-accent: var(--sl-color-accent);
-  --sl-color-bg-inline-code: var(--sl-color-gray-6);
 }
 
-/* ===== Print Styles ===== */
+/* ===== General overrides ===== */
 
 /* Hide theme selector (light-only site) */
 starlight-theme-select {
@@ -42,6 +21,8 @@ starlight-theme-select {
   width: 1.5rem !important;
   height: 1.5rem !important;
 }
+
+/* ===== Print Styles ===== */
 
 @media print {
   .header,
