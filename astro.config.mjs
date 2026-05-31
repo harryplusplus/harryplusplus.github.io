@@ -114,6 +114,11 @@ export default defineConfig({
           label: 'GitHub',
           href: 'https://github.com/harryplusplus',
         },
+        {
+          icon: 'linkedin',
+          label: 'LinkedIn',
+          href: 'https://linkedin.com/in/harryplusplus',
+        },
       ],
       sidebar: [
         { label: 'Career', link: '/', translations: { ko: '경력기술서' } },
