@@ -1,0 +1,116 @@
+/* Charmtone Pantera — Crush-inspired dark theme for Starlight */
+
+/* ===== Dark Mode (default) ===== */
+:root {
+  /* Foreground */
+  --sl-color-white: #ecebf0;            /* fgBase (Sash) */
+  --sl-color-gray-1: #bfbcc8;           /* fgSubtle (Smoke) */
+  --sl-color-gray-2: #858392;           /* fgMoreSubtle (Squid) — main text */
+  --sl-color-gray-3: #605f6b;           /* fgMostSubtle (Oyster) */
+
+  /* Background grays */
+  --sl-color-gray-4: #4d4c57;           /* bgMostVisible (Iron) */
+  --sl-color-gray-5: #3a3943;           /* bgLessVisible / separator (Char) */
+  --sl-color-gray-6: #2d2c36;           /* bgLeastVisible (BBQ) */
+  --sl-color-black: #201f26;            /* bgBase (Pepper) */
+
+  /* Accent — primary (Charple) */
+  --sl-color-accent-low: #3a2b8a;       /* primary darkened */
+  --sl-color-accent: #6b50ff;           /* primary (Charple) */
+  --sl-color-accent-high: #9f8fff;      /* primary lightened */
+
+  /* Semantic hues */
+  --sl-hue-orange: 24;
+  --sl-color-orange-low: hsl(24, 39%, 22%);
+  --sl-color-orange: #ff985a;           /* denied (Tang) */
+  --sl-color-orange-high: hsl(24, 82%, 87%);
+
+  --sl-hue-green: 160;
+  --sl-color-green-low: hsl(160, 39%, 22%);
+  --sl-color-green: #00ffb2;            /* success (Julep) */
+  --sl-color-green-high: hsl(160, 82%, 80%);
+
+  --sl-hue-blue: 200;
+  --sl-color-blue-low: hsl(200, 54%, 20%);
+  --sl-color-blue: #00a4ff;             /* info (Malibu) */
+  --sl-color-blue-high: hsl(200, 100%, 87%);
+
+  --sl-hue-purple: 270;
+  --sl-color-purple-low: hsl(270, 39%, 22%);
+  --sl-color-purple: #6b50ff;           /* primary (Charple) */
+  --sl-color-purple-high: hsl(270, 82%, 89%);
+
+  --sl-hue-red: 348;
+  --sl-color-red-low: hsl(348, 39%, 22%);
+  --sl-color-red: #ff577d;              /* destructive (Coral) */
+  --sl-color-red-high: hsl(348, 82%, 87%);
+
+  /* Derived */
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: var(--sl-color-accent-low);
+  --sl-color-bg: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-gray-6);
+  --sl-color-bg-sidebar: var(--sl-color-gray-6);
+  --sl-color-bg-inline-code: var(--sl-color-gray-5);
+  --sl-color-bg-accent: var(--sl-color-accent-high);
+  --sl-color-hairline-light: var(--sl-color-gray-5);
+  --sl-color-hairline: var(--sl-color-gray-6);
+  --sl-color-hairline-shade: var(--sl-color-black);
+  --sl-color-backdrop-overlay: hsla(260, 13%, 10%, 0.66);
+
+  /* Banner text */
+  --sl-color-banner-text: var(--sl-color-white);
+}
+
+/* ===== Light Mode ===== */
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+  /* Foreground (inverted) */
+  --sl-color-white: #201f26;            /* bgBase (Pepper) */
+  --sl-color-gray-1: #2d2c36;           /* bgLeastVisible (BBQ) */
+  --sl-color-gray-2: #3a3943;           /* bgLessVisible (Char) */
+  --sl-color-gray-3: #4d4c57;           /* bgMostVisible (Iron) */
+  --sl-color-gray-4: #605f6b;           /* fgMostSubtle (Oyster) */
+  --sl-color-gray-5: #858392;           /* fgMoreSubtle (Squid) */
+  --sl-color-gray-6: #bfbcc8;           /* fgSubtle (Smoke) */
+  --sl-color-gray-7: #ecebf0;           /* fgBase (Sash) */
+  --sl-color-black: #fffaf1;            /* onPrimary (Butter) — warm off-white */
+
+  /* Accent — primary (Charple) */
+  --sl-color-accent-high: #3a2b8a;      /* primary darkened */
+  --sl-color-accent: #6b50ff;           /* primary (Charple) */
+  --sl-color-accent-low: #e0dbff;       /* primary very light */
+
+  /* Semantic hues — light mode */
+  --sl-color-orange-high: hsl(24, 80%, 25%);
+  --sl-color-orange: #ff985a;           /* denied (Tang) */
+  --sl-color-orange-low: hsl(24, 90%, 88%);
+
+  --sl-color-green-high: hsl(160, 80%, 22%);
+  --sl-color-green: #00c48a;            /* success slightly darker for light bg */
+  --sl-color-green-low: hsl(160, 85%, 90%);
+
+  --sl-color-blue-high: hsl(200, 80%, 30%);
+  --sl-color-blue: #00a4ff;             /* info (Malibu) */
+  --sl-color-blue-low: hsl(200, 88%, 90%);
+
+  --sl-color-purple-high: hsl(270, 90%, 30%);
+  --sl-color-purple: #6b50ff;           /* primary (Charple) */
+  --sl-color-purple-low: hsl(270, 80%, 90%);
+
+  --sl-color-red-high: hsl(348, 80%, 30%);
+  --sl-color-red: #ff577d;              /* destructive (Coral) */
+  --sl-color-red-low: hsl(348, 80%, 90%);
+
+  /* Derived */
+  --sl-color-text-accent: var(--sl-color-accent);
+  --sl-color-text-invert: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-gray-7);
+  --sl-color-bg-sidebar: var(--sl-color-bg);
+  --sl-color-bg-inline-code: var(--sl-color-gray-6);
+  --sl-color-bg-accent: var(--sl-color-accent);
+  --sl-color-hairline-light: var(--sl-color-gray-6);
+  --sl-color-hairline-shade: var(--sl-color-gray-6);
+  --sl-color-backdrop-overlay: hsla(260, 9%, 36%, 0.66);
+}
