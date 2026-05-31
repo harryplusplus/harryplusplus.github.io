@@ -1,8 +1,8 @@
 /* Custom styles for harryplusplus — light-only */
 
-/* ===== Base theme (light) ===== */
+/* ===== Theme overrides ===== */
 :root {
-  /* Foreground */
+  /* Foreground (slightly warmer grays) */
   --sl-color-white: #201f26;
   --sl-color-gray-1: #2d2c36;
   --sl-color-gray-2: #3a3943;
@@ -11,52 +11,22 @@
   --sl-color-gray-5: #858392;
   --sl-color-gray-6: #bfbcc8;
   --sl-color-gray-7: #ecebf0;
-  --sl-color-black: #ffffff;
 
-  /* Accent */
+  /* Accent: purple instead of default blue */
   --sl-color-accent-low: #e0dbff;
   --sl-color-accent: #6b50ff;
   --sl-color-accent-high: #3a2b8a;
 
-  /* Semantic */
+  /* Semantic hues adjusted */
   --sl-hue-orange: 24;
-  --sl-color-orange-low: hsl(24, 90%, 88%);
-  --sl-color-orange: #ff985a;
-  --sl-color-orange-high: hsl(24, 80%, 25%);
-
   --sl-hue-green: 160;
-  --sl-color-green-low: hsl(160, 85%, 90%);
-  --sl-color-green: #00c48a;
-  --sl-color-green-high: hsl(160, 80%, 22%);
-
   --sl-hue-blue: 200;
-  --sl-color-blue-low: hsl(200, 88%, 90%);
-  --sl-color-blue: #00a4ff;
-  --sl-color-blue-high: hsl(200, 80%, 30%);
-
   --sl-hue-purple: 270;
-  --sl-color-purple-low: hsl(270, 80%, 90%);
-  --sl-color-purple: #6b50ff;
-  --sl-color-purple-high: hsl(270, 90%, 30%);
-
   --sl-hue-red: 348;
-  --sl-color-red-low: hsl(348, 80%, 90%);
-  --sl-color-red: #ff577d;
-  --sl-color-red-high: hsl(348, 80%, 30%);
 
-  /* Derived */
-  --sl-color-text: var(--sl-color-gray-2);
+  /* Derived from overrides */
   --sl-color-text-accent: var(--sl-color-accent);
-  --sl-color-text-invert: var(--sl-color-black);
-  --sl-color-bg: var(--sl-color-black);
-  --sl-color-bg-nav: var(--sl-color-gray-7);
-  --sl-color-bg-sidebar: var(--sl-color-bg);
   --sl-color-bg-inline-code: var(--sl-color-gray-6);
-  --sl-color-bg-accent: var(--sl-color-accent);
-  --sl-color-hairline-light: var(--sl-color-gray-6);
-  --sl-color-hairline: var(--sl-color-gray-6);
-  --sl-color-hairline-shade: var(--sl-color-gray-6);
-  --sl-color-backdrop-overlay: hsla(260, 9%, 36%, 0.66);
 }
 
 /* ===== Print Styles ===== */
