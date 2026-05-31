@@ -48,28 +48,50 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic',
-    'Noto Sans KR', Helvetica, Arial, sans-serif;
+  font-family:
+    'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR',
+    Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family:
+    'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
 
 /* Code blocks and inline code */
-pre, code, kbd,
+pre,
+code,
+kbd,
 .fake-pre,
 .blog .end .eof,
 footer p.slogan {
-  font-family: 'JetBrains Mono Web', 'JetBrains Mono', Menlo, 'D2Coding',
-    'Courier New', monospace;
+  font-family:
+    'JetBrains Mono Web', 'JetBrains Mono', Menlo, 'D2Coding', 'Courier New',
+    monospace;
 }
 
 /* Starlight heading overrides use Inter too */
-h1.product, h2.product, h3.product, h4.product, h5.product, h6.product,
-h3.puffy a, h3.puffy span,
+h1.product,
+h2.product,
+h3.product,
+h4.product,
+h5.product,
+h6.product,
+h3.puffy a,
+h3.puffy span,
 .content.cloud .title h2,
 .content.standalone h1 {
-  font-family: 'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-family:
+    'Inter', 'D2Coding', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
