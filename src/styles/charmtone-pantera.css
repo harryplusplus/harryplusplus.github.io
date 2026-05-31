@@ -114,3 +114,95 @@
   --sl-color-hairline-shade: var(--sl-color-gray-6);
   --sl-color-backdrop-overlay: hsla(260, 9%, 36%, 0.66);
 }
+
+/* ===== Print Styles ===== */
+@media print {
+  /* Hide navigation chrome */
+  .header,
+  .sidebar-pane,
+  .right-sidebar-panel,
+  .right-sidebar-container,
+  .nav,
+  .nav-toggle,
+  .mobile-preferences,
+  .social-icons,
+  starlight-theme-select,
+  starlight-lang-select,
+  site-search,
+  .pagination-links,
+  footer,
+  .sl-banner,
+  .mobile-toc-toggle,
+  sl-sidebar-state-persist {
+    display: none !important;
+  }
+
+  /* Reset layout for print */
+  .main-frame,
+  .main-pane,
+  .content-panel,
+  .sl-container,
+  .page {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Prevent page breaks inside sections */
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  .sl-markdown-content > * {
+    page-break-inside: avoid;
+  }
+
+  /* Remove dark backgrounds for print */
+  pre,
+  code {
+    background: #f5f5f5 !important;
+    border: 1px solid #ddd;
+    color: #000 !important;
+  }
+
+  /* Reset text colors */
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .sl-markdown-content *,
+  .sl-markdown-content h1,
+  .sl-markdown-content h2 {
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #555;
+  }
+}
