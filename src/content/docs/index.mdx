@@ -6,31 +6,36 @@ hero:
   tagline: I build things that matter.
   image:
     file: ../../assets/houston.webp
-  actions:
-    - text: View Career
-      link: /career/
-      icon: right-arrow
-    - text: See Portfolio
-      link: /portfolio/concept-a/
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components'
+## Senior Backend Engineer @ Corp X
 
-## Explore
+_2021–2025 · Go, Kafka, Redis, Kubernetes_
 
-<CardGrid stagger>
-  <Card title="Career" icon="star">
-    10+ years of backend engineering. Problem solver.
-  </Card>
-  <Card title="Portfolio: Performance" icon="open-book">
-    High-traffic systems, optimization, distributed tracing.
-  </Card>
-  <Card title="Portfolio: Data" icon="add-document">
-    Data pipelines, ETL, real-time analytics.
-  </Card>
-  <Card title="Contact" icon="setting">
-    [GitHub](https://github.com/harryplusplus)
-  </Card>
-</CardGrid>
+### Problem
+
+The tracing pipeline could only handle 2k spans/sec before falling over. P99 latency for critical API endpoints was 2.3s.
+
+### Solution
+
+Replaced the monolithic ingestion with a Kafka-backed streaming pipeline. Added a local LRU cache layer with write-behind persistence. Rewrote the hotpath in Go.
+
+### Result
+
+- Throughput increased to 10k spans/sec
+- P99 latency reduced by 60% (2.3s → 920ms)
+- Infrastructure cost cut by 40%
+
+---
+
+## Backend Engineer @ Startup Y
+
+_2018–2021 · Python, PostgreSQL, AWS_
+
+Built a real-time analytics pipeline (Kafka → Flink → ClickHouse). Data freshness from T+1 to &lt;5 minutes. Zero silent failures.
+
+---
+
+## More
+
+[Full Career](/career/) · [Portfolio: Performance](/portfolio/concept-a/) · [Portfolio: Data Engineering](/portfolio/concept-b/) · [GitHub](https://github.com/harryplusplus)
