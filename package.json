@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "oxfmt --write && oxlint",
-    "check:ci": "oxfmt --check && oxlint",
+    "check": "oxfmt --write && prettier --write 'src/**/*.astro'",
+    "check:ci": "oxfmt --check && prettier --check 'src/**/*.astro' && oxlint",
     "prepare": "husky"
   },
   "dependencies": {
@@ -21,7 +21,9 @@
     "husky": "^9.1.7",
     "oxfmt": "^0.52.0",
     "oxlint": "^1.67.0",
-    "oxlint-tsgolint": "^0.23.0"
+    "oxlint-tsgolint": "^0.23.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "^0.14.1"
   },
   "packageManager": "pnpm@10.33.0"
 }

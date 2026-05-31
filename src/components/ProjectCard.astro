@@ -1,15 +1,16 @@
 ---
 interface Props {
-  title: string
-  period: string
-  problem: string
-  solution: string
-  result: string[]
-  learned?: string
-  stack: string
+  title: string;
+  period: string;
+  problem: string;
+  solution: string;
+  result: string[];
+  learned?: string;
+  stack: string;
 }
 
-const { title, period, problem, solution, result, learned, stack } = Astro.props
+const { title, period, problem, solution, result, learned, stack } =
+  Astro.props;
 ---
 
 <article class="project-card">
