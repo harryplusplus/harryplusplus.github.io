@@ -2,16 +2,33 @@
 title: Portfolio — High-Performance Backend
 ---
 
-## Distributed Tracing Platform
+import ProjectCard from '../../../components/ProjectCard.astro'
 
-Built a tracing pipeline processing 10k spans/sec with Go and Kafka.
+## Projects
 
-**Stack:** Go, Kafka, OpenTelemetry, Jaeger
+<ProjectCard
+  title="Distributed Tracing Platform"
+  period="2024"
+  problem="Monolithic ingestion could only handle 2k spans/sec before falling over."
+  solution="Replaced with Kafka-backed streaming pipeline + Go rewrite of hotpath."
+  result={[
+    'Throughput increased to 10k spans/sec',
+    'P99 latency reduced by 60%',
+    'Infrastructure cost cut by 40%',
+  ]}
+  learned="Design backpressure-aware systems the hard way."
+  stack="Go, Kafka, OpenTelemetry, Jaeger"
+/>
 
----
-
-## Cache Layer Redesign
-
-Replaced Redis cluster with local LRU + write-behind. Cut costs 40%.
-
-**Stack:** Go, Redis, PostgreSQL
+<ProjectCard
+  title="Cache Layer Redesign"
+  period="2023"
+  problem="Redis cluster costs were growing linearly with traffic, hitting budgets."
+  solution="Introduced local LRU cache with write-behind persistence pattern."
+  result={[
+    'Redis costs reduced by 40%',
+    'P99 read latency dropped from 5ms to 0.8ms',
+    'Cache hit ratio improved from 78% to 97%',
+  ]}
+  stack="Go, Redis, PostgreSQL, Kubernetes"
+/>
