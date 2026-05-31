@@ -16,6 +16,36 @@ export default defineConfig({
         {
           tag: 'link',
           attrs: {
+            rel: 'preload',
+            as: 'font',
+            type: 'font/woff2',
+            href: '/fonts/Inter-Variable.woff2',
+            crossorigin: true,
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'preload',
+            as: 'font',
+            type: 'font/woff2',
+            href: '/fonts/JetBrainsMono-Variable.woff2',
+            crossorigin: true,
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'preload',
+            as: 'font',
+            type: 'font/woff2',
+            href: '/fonts/D2Coding.woff2',
+            crossorigin: true,
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
             rel: 'icon',
             type: 'image/png',
             sizes: '32x32',
