@@ -16,6 +16,11 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css', './src/styles/fonts.css'],
       head: [
         {
+          tag: 'script',
+          content:
+            "document.documentElement.dataset.theme='light';localStorage.setItem('starlight-theme','light')",
+        },
+        {
           tag: 'link',
           attrs: {
             rel: 'preload',
