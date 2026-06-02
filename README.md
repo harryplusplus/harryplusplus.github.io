@@ -1,3 +1,16 @@
-# harryplusplus's Homepage
+# harry++ Homepage
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+## Prerequisites
+
+- pnpm 11
+- vp 0.1
+
+## Development
+
+```sh
+# Install packages
+vp i
+
+# Configure commit hooks
+vp config
+```

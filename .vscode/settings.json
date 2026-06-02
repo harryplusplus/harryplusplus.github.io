@@ -1,0 +1,51 @@
+{
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
+  "cSpell.words": ["oxfmt"]
+}
