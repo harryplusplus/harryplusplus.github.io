@@ -19,6 +19,12 @@ const { title } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <style>
+      html {
+        font-family:
+          'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+      }
+    </style>
     <Font cssVariable="--font-noto-sans-kr" preload />
     <style>
       html {
