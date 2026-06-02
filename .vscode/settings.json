@@ -35,6 +35,14 @@
     "editor.defaultFormatter": "oxc.oxc-vscode",
     "editor.formatOnSave": false
   },
+  "[mdx]": {
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": false
+  },
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.format.oxc": "explicit",
