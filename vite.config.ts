@@ -3,6 +3,7 @@ import oxfmtConfig from './oxfmt.config.js'
 
 export default defineConfig({
   staged: {
+    '*.astro': 'prettier --write',
     '*': 'vp check --fix',
   },
   fmt: oxfmtConfig,
