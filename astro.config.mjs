@@ -9,11 +9,18 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
+      name: 'Noto Sans',
+      cssVariable: '--font-noto-sans',
+      weights: [400, 700],
+      subsets: ['latin', 'latin-ext'],
+    },
+    {
+      provider: fontProviders.fontsource(),
       name: 'Noto Sans KR',
       cssVariable: '--font-noto-sans-kr',
-      weights: [400, 500, 700],
+      weights: [400, 700],
       styles: ['normal'],
-      subsets: ['korean', 'latin'],
+      subsets: ['korean'],
     },
   ],
   vite: {
