@@ -11,6 +11,7 @@ export default defineConfig({
       provider: fontProviders.google(),
       name: 'Noto Sans KR',
       cssVariable: '--font-noto-sans-kr',
+      display: 'block',
       weights: [400, 500, 700],
       styles: ['normal'],
       subsets: ['latin', 'korean'],
