@@ -19,7 +19,7 @@ jobs:
         with:
           cache: true
       - run: vp i
-      - run: vp check
+      - run: vp run check
       - run: vp run build
       - uses: actions/upload-pages-artifact@v5
         with:
