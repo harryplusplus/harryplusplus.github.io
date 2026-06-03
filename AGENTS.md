@@ -10,3 +10,4 @@
     - `pnpm add --save-dev foo` 대신에 `vp add -D foo`를 사용하세요.
     - `pnpm run build` 대신에 `vp run build`를 사용하세요.
     - 모르는 것이 있으면 `vp --help`를 사용하세요.
+- mdx 파일을 수정하면 `vp check --fix <file>`을 실행해서 format, lint auto fix가 되도록 하세요.
